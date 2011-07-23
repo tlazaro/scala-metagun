@@ -1,0 +1,9 @@
+/common/target/
+/desktop/target/
+/project/boot/
+/project/target/
+/target/
+
+/common/build/
+/common/dist/
+/common/nbproject/private/

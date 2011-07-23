@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><map height="56" orientation="orthogonal" tileheight="10" tilewidth="10" version="1.0" width="64"><properties><property name="blended tiles" value="4,5,6,7,27,28,30"/></properties>
+ <tileset firstgid="1" name="Walls" tileheight="10" tilewidth="10">
+  <image height="256" source="walls.png" width="256"/>
+ </tileset>
+ <layer height="56" name="Background" width="64">
+  <data compression="zlib" encoding="base64">
+   eJztw0ENAAAMA6ETUv86Z2MPSFg1VVVVVVVVVVVVVVVVVfXVA8triBA=
+  </data>
+ </layer>
+ <layer height="56" name="Walls" width="64">
+  <data compression="zlib" encoding="base64">
+   eJzt1jEKw0AMRcF1IPe/ckgXXKVJnkDzQY0baRAWe51zruW1Nfz8/HtT+ifcefvn59+bu3/CTfpnJsxQhp+fv+tb31n75+ffG++/foYy/Pz8Xd/6zto/P//eeP/1M5Th5+fv+tZ31v75+ffG+6+foQw/P3/Xt76z9s/Pvzff+Kfcql/E/vnf9fj49oxmKVL829PqBbcgAhY=
+  </data>
+ </layer>
+</map>
