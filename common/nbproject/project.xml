@@ -1,16 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://www.netbeans.org/ns/project/1">
     <type>org.netbeans.modules.scala.project</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/scala-project/1">
-            <name>Metagun</name>
+            <name>common</name>
             <minimum-ant-version>1.6.5</minimum-ant-version>
-            <source-roots>
-                <root id="src.scala.dir"/>
-                <root id="src.dir"/>
-                <root id="resources.dir"/>
-            </source-roots>
-            <test-roots/>
+            <source-roots><root name="Scala Source" id="src.dir"></root><root name="Resources" id="resources.dir"></root><root name="Configuration" id="sources.sbt.project"></root></source-roots>
+            <test-roots></test-roots>
         </data>
+        <references xmlns="http://www.netbeans.org/ns/ant-project-references/1"></references>
     </configuration>
 </project>
