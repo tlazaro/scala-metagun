@@ -12,17 +12,17 @@ Help is welcomed!
 Setup SBT
 -------------------------------------------------------------------------------
 
-* Make sure you have Scala and SBT 0.10 working
+* Make sure you have Scala and SBT 0.11.2 working
 
 Checkout this repository and go the the root folder from the command line.
 
 In the command-line:
 
-$ sbt
-...
-> project desktop
-...
-> run
+    $ sbt
+    ...
+    > project desktop
+    ...
+    > run
 
 And the game should be running...
 
