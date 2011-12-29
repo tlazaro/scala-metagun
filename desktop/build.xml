@@ -1,69 +1,64 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- You may freely edit this file. See commented blocks below for -->
-<!-- some examples of how to customize the build. -->
-<!-- (If you delete it and reopen the project it will be recreated.) -->
-<project name="MetagunDesktop" default="default" basedir=".">
-    <description>Builds, tests, and runs the project MetagunDesktop.</description>
-    <import file="nbproject/build-impl.xml"/>
-    <!--
+<project name="desktop" default="default">
+    <description>Builds, tests, and runs the project sbt-netbeans-plugin.</description>
+    <import file="nbproject/build-impl.xml"></import>
 
-    There exist several targets which are by default empty and which can be 
-    used for execution of your tasks. These targets are usually executed 
-    before and after some main targets. They are: 
+    <target name="clean" description="Clean build products.">
+        <exec dir="/home/tomas/NetbeansProjects/scala-metagun" executable="sbt">
+            <arg value=";project desktop;clean"></arg>
+        </exec>
+    </target>
 
-      -pre-init:                 called before initialization of project properties
-      -post-init:                called after initialization of project properties
-      -pre-compile:              called before javac compilation
-      -post-compile:             called after javac compilation
-      -pre-compile-single:       called before javac compilation of single file
-      -post-compile-single:      called after javac compilation of single file
-      -pre-compile-test:         called before javac compilation of JUnit tests
-      -post-compile-test:        called after javac compilation of JUnit tests
-      -pre-compile-test-single:  called before javac compilation of single JUnit test
-      -post-compile-test-single: called after javac compilation of single JUunit test
-      -pre-jar:                  called before JAR building
-      -post-jar:                 called after JAR building
-      -post-clean:               called after cleaning build products
+    <target name="jar" description="Build JAR.">
+        <exec dir="/home/tomas/NetbeansProjects/scala-metagun" executable="sbt">
+            <arg value=";project desktop;;package;package-src"></arg>
+        </exec>
+    </target>
 
-    (Targets beginning with '-' are not intended to be called on their own.)
+    <target name="compile" description="Compile project.">
+        <exec dir="/home/tomas/NetbeansProjects/scala-metagun" executable="sbt">
+            <arg value=";project desktop;compile"></arg>
+        </exec>
+    </target>
 
-    Example of inserting an obfuscator after compilation could look like this:
+    <target name="test" description="Run unit tests.">
+        <exec dir="/home/tomas/NetbeansProjects/scala-metagun" executable="sbt">
+            <arg value=";project desktop;test"></arg>
+        </exec>
+    </target>
+    
+    <target name="run-single">
+        <exec dir="/home/tomas/NetbeansProjects/scala-metagun" executable="sbt">
+            <arg value=";project desktop;run-main ${run.class}"></arg>
+        </exec>        
+    </target>
+    
+    <target name="run" description="Run a main class.">
+        <echo>You must set the main class for the main 'run' task. Change Compile to Test to set it for 'test:run': 
+        mainClass in (Compile, run) := Some({main.class})
+        </echo>
+        <exec dir="/home/tomas/NetbeansProjects/scala-metagun" executable="sbt">
+            <arg value=";project desktop;run"></arg>
+        </exec>        
+    </target>       
+    
+    <target name="debug-single">
+        <echo>
+            Add -Xrunjdwp:transport=dt_socket,address={jpda.address} as an argument
+            to the SBT (specifying desired `jpda.address`), attach debugger and run the file.
+        </echo>
+    </target>    
+    
+    <target name="debug" description="Debug project in IDE.">
+        <echo>
+            Add -Xrunjdwp:transport=dt_socket,address={jpda.address} as an argument
+            to the SBT (specifying desired `jpda.address`), attach debugger and run the project.
+        </echo>        
+    </target>  
+    
+    <target name="-javadoc-build">
+        <exec dir="/home/tomas/NetbeansProjects/scala-metagun" executable="sbt">
+            <arg value=";project desktop;package-doc"></arg>
+        </exec>        
+    </target>        
 
-        <target name="-post-compile">
-            <obfuscate>
-                <fileset dir="${build.classes.dir}"/>
-            </obfuscate>
-        </target>
-
-    For list of available properties check the imported 
-    nbproject/build-impl.xml file. 
-
-
-    Another way to customize the build is by overriding existing main targets.
-    The targets of interest are: 
-
-      -init-macrodef-javac:     defines macro for javac compilation
-      -init-macrodef-junit:     defines macro for junit execution
-      -init-macrodef-debug:     defines macro for class debugging
-      -init-macrodef-java:      defines macro for class execution
-      -do-jar-with-manifest:    JAR building (if you are using a manifest)
-      -do-jar-without-manifest: JAR building (if you are not using a manifest)
-      run:                      execution of project 
-      -javadoc-build:           Javadoc generation
-      test-report:              JUnit report generation
-
-    An example of overriding the target for project execution could look like this:
-
-        <target name="run" depends="MetagunDesktop-impl.jar">
-            <exec dir="bin" executable="launcher.exe">
-                <arg file="${dist.jar}"/>
-            </exec>
-        </target>
-
-    Notice that the overridden target depends on the jar target and not only on 
-    the compile target as the regular run target does. Again, for a list of available 
-    properties which you can use, check the target you are overriding in the
-    nbproject/build-impl.xml file. 
-
-    -->
 </project>
