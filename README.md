@@ -26,7 +26,7 @@ To run Desktop version in the command-line:
 
 And the game should be running...
 
-To run Android version in the command-line ('device-name' for appropriate device name):
+To run Android version in the command-line (replace 'device-name' for appropriate device name):
 
     $ sbt
     ...
