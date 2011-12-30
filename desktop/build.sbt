@@ -1,3 +1,2 @@
 
-
-seq(netbeans.NetbeansTasks.netbeansSettings:_*)
+//seq(netbeans.NetbeansTasks.netbeansSettings:_*)
