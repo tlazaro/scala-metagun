@@ -5,7 +5,7 @@ This is a port to Scala from the Java example provided with Libgdx. I claim no r
 
 The code conversion was done quickly and naively without caring much for the 'Scala way' or optimizing the code. I just went on and converted line by line without thinking much except for a few cases. I plan on re-working it now that I finished porting it to 100% Scala code.
 
-The desktop build is working. Android or Web are not done yet but the project is setup to allow independent development from the build by having a "common" project.
+The Desktop and Android builds are working. Web builds are not done yet but the project is setup to allow independent development from the build by having a "common" and "resources" project.
 
 Help is welcomed!
 
@@ -16,7 +16,7 @@ Setup SBT
 
 Checkout this repository and go the the root folder from the command line.
 
-In the command-line:
+To run Desktop version in the command-line:
 
     $ sbt
     ...
@@ -25,6 +25,20 @@ In the command-line:
     > run
 
 And the game should be running...
+
+To run Android version in the command-line ('device-name' for appropriate device name):
+
+    $ sbt
+    ...
+    > project android
+    ...
+    > android:package-debug
+    ...
+    > android:emulator-start device-name
+    ...
+    > android:start-emulator
+
+And the game should deployed to your device and running...
 
 Setup Netbeans
 -------------------------------------------------------------------------------
