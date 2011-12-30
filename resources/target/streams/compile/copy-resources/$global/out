@@ -1,0 +1,24 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/home/tomas/NetbeansProjects/scala-metagun/resources/src/main/resources/res,/home/tomas/NetbeansProjects/scala-metagun/resources/target/scala-2.9.1/classes/res)[0m
+[0m[[0mdebug[0m] [0m	(/home/tomas/NetbeansProjects/scala-metagun/resources/src/main/resources/res/oof.wav,/home/tomas/NetbeansProjects/scala-metagun/resources/target/scala-2.9.1/classes/res/oof.wav)[0m
+[0m[[0mdebug[0m] [0m	(/home/tomas/NetbeansProjects/scala-metagun/resources/src/main/resources/res/player.png,/home/tomas/NetbeansProjects/scala-metagun/resources/target/scala-2.9.1/classes/res/player.png)[0m
+[0m[[0mdebug[0m] [0m	(/home/tomas/NetbeansProjects/scala-metagun/resources/src/main/resources/res/jump.wav,/home/tomas/NetbeansProjects/scala-metagun/resources/target/scala-2.9.1/classes/res/jump.wav)[0m
+[0m[[0mdebug[0m] [0m	(/home/tomas/NetbeansProjects/scala-metagun/resources/src/main/resources/res/levels.png,/home/tomas/NetbeansProjects/scala-metagun/resources/target/scala-2.9.1/classes/res/levels.png)[0m
+[0m[[0mdebug[0m] [0m	(/home/tomas/NetbeansProjects/scala-metagun/resources/src/main/resources/res/hit.wav,/home/tomas/NetbeansProjects/scala-metagun/resources/target/scala-2.9.1/classes/res/hit.wav)[0m
+[0m[[0mdebug[0m] [0m	(/home/tomas/NetbeansProjects/scala-metagun/resources/src/main/resources/res/winscreen1.png,/home/tomas/NetbeansProjects/scala-metagun/resources/target/scala-2.9.1/classes/res/winscreen1.png)[0m
+[0m[[0mdebug[0m] [0m	(/home/tomas/NetbeansProjects/scala-metagun/resources/src/main/resources/res/splat.wav,/home/tomas/NetbeansProjects/scala-metagun/resources/target/scala-2.9.1/classes/res/splat.wav)[0m
+[0m[[0mdebug[0m] [0m	(/home/tomas/NetbeansProjects/scala-metagun/resources/src/main/resources/res/exposition.txt,/home/tomas/NetbeansProjects/scala-metagun/resources/target/scala-2.9.1/classes/res/exposition.txt)[0m
+[0m[[0mdebug[0m] [0m	(/home/tomas/NetbeansProjects/scala-metagun/resources/src/main/resources/res/boom.wav,/home/tomas/NetbeansProjects/scala-metagun/resources/target/scala-2.9.1/classes/res/boom.wav)[0m
+[0m[[0mdebug[0m] [0m	(/home/tomas/NetbeansProjects/scala-metagun/resources/src/main/resources/res/launch.wav,/home/tomas/NetbeansProjects/scala-metagun/resources/target/scala-2.9.1/classes/res/launch.wav)[0m
+[0m[[0mdebug[0m] [0m	(/home/tomas/NetbeansProjects/scala-metagun/resources/src/main/resources/res/death.wav,/home/tomas/NetbeansProjects/scala-metagun/resources/target/scala-2.9.1/classes/res/death.wav)[0m
+[0m[[0mdebug[0m] [0m	(/home/tomas/NetbeansProjects/scala-metagun/resources/src/main/resources/res/startgame.wav,/home/tomas/NetbeansProjects/scala-metagun/resources/target/scala-2.9.1/classes/res/startgame.wav)[0m
+[0m[[0mdebug[0m] [0m	(/home/tomas/NetbeansProjects/scala-metagun/resources/src/main/resources/res/gremlins.png,/home/tomas/NetbeansProjects/scala-metagun/resources/target/scala-2.9.1/classes/res/gremlins.png)[0m
+[0m[[0mdebug[0m] [0m	(/home/tomas/NetbeansProjects/scala-metagun/resources/src/main/resources/res/titlescreen.png,/home/tomas/NetbeansProjects/scala-metagun/resources/target/scala-2.9.1/classes/res/titlescreen.png)[0m
+[0m[[0mdebug[0m] [0m	(/home/tomas/NetbeansProjects/scala-metagun/resources/src/main/resources/res/winscreen2.png,/home/tomas/NetbeansProjects/scala-metagun/resources/target/scala-2.9.1/classes/res/winscreen2.png)[0m
+[0m[[0mdebug[0m] [0m	(/home/tomas/NetbeansProjects/scala-metagun/resources/src/main/resources/res/gethat.wav,/home/tomas/NetbeansProjects/scala-metagun/resources/target/scala-2.9.1/classes/res/gethat.wav)[0m
+[0m[[0mdebug[0m] [0m	(/home/tomas/NetbeansProjects/scala-metagun/resources/src/main/resources/res/buttons.png,/home/tomas/NetbeansProjects/scala-metagun/resources/target/scala-2.9.1/classes/res/buttons.png)[0m
+[0m[[0mdebug[0m] [0m	(/home/tomas/NetbeansProjects/scala-metagun/resources/src/main/resources/res/mojang.png,/home/tomas/NetbeansProjects/scala-metagun/resources/target/scala-2.9.1/classes/res/mojang.png)[0m
+[0m[[0mdebug[0m] [0m	(/home/tomas/NetbeansProjects/scala-metagun/resources/src/main/resources/res/walls.png,/home/tomas/NetbeansProjects/scala-metagun/resources/target/scala-2.9.1/classes/res/walls.png)[0m
+[0m[[0mdebug[0m] [0m	(/home/tomas/NetbeansProjects/scala-metagun/resources/src/main/resources/res/pew.wav,/home/tomas/NetbeansProjects/scala-metagun/resources/target/scala-2.9.1/classes/res/pew.wav)[0m
+[0m[[0mdebug[0m] [0m	(/home/tomas/NetbeansProjects/scala-metagun/resources/src/main/resources/res/background.png,/home/tomas/NetbeansProjects/scala-metagun/resources/target/scala-2.9.1/classes/res/background.png)[0m
+[0m[[0mdebug[0m] [0m	(/home/tomas/NetbeansProjects/scala-metagun/resources/src/main/resources/res/guys.png,/home/tomas/NetbeansProjects/scala-metagun/resources/target/scala-2.9.1/classes/res/guys.png)[0m

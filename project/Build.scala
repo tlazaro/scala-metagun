@@ -1,16 +1,17 @@
 import sbt._
 import Keys._
 import AndroidKeys._
+import sbtassembly.Plugin._
+import AssemblyKeys._
 
 object MetagunBuild extends Build {
-	// Declare a project in the root directory of the build with ID "root".
-	// Declare an execution dependency on sub1.
 	lazy val common = Project("common", file("common"))
+    lazy val resources = Project("resources", file("resources"))
 
-	lazy val desktop: Project = Project("desktop", file("desktop")) dependsOn(common) settings (
-		mainClass in Compile := Some("com.mojang.metagun.Main"),
-		fork in run := true
-	)
+    lazy val desktop: Project = Project("desktop", file("desktop")) dependsOn(common, resources) settings(Seq(
+        mainClass in Compile := Some("com.mojang.metagun.Main"),
+        fork in run := true
+    ) ++ assemblySettings :_*)
 
     val options = """-optimizationpasses 5
 -dontusemixedcaseclassnames
@@ -50,10 +51,10 @@ object MetagunBuild extends Build {
 	lazy val android: Project = Project("android", file("android"),
           settings = AndroidGeneral.fullAndroidSettings ++ Seq (
             proguardOption in Android := options,
-            mainAssetsPath in Android := file("common/src/main/resources"),
+            mainAssetsPath in Android := file("resources/src/main/resources"),
             javaHome := Some(file("/usr/lib/jvm/java-6-sun/")) // to avoid java 7            
           )
-        ) dependsOn(common) 
+        ) dependsOn(common)
 
 }
  
